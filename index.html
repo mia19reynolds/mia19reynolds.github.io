@@ -8,16 +8,14 @@
       font-family: 'Aptos', sans-serif;
     }
 
-    /* Float the image in the header */
     header img {
       float: right;
-      width: 200px;    /* fixed width */
-      height: auto;    /* preserve aspect ratio */
+      width: 200px;    
+      height: auto;   
       margin-left: 1em;
       margin-bottom: 0.5em;
     }
 
-    /* Clear the float after header content */
     header::after {
       content: "";
       display: block;
@@ -29,21 +27,80 @@
 
   <!-- Intro -->
   <header>
-    <!-- Just the src and alt here; sizing & float are in CSS -->
     <img src="IMG_7143.jpg" alt="Mia Reynolds">
-
     <h1>Mia Reynolds</h1>
     <p>
       A high-performing third-year Computer Science student with a developing interest in deep learning and its ethical implications in practice.
     </p>
     <nav>
-      <a href="https://github.com/yourusername" target="_blank">GitHub</a> |
-      <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a> |
+      <a href="https://github.com/mia19reynolds" target="_blank">GitHub</a> |
+      <a href="www.linkedin.com/in/mia-reynolds-4391a626a" target="_blank">LinkedIn</a> |
       <a href="mailto:mia19reynolds@gmail.com">Email</a>
     </nav>
   </header>
 
-  <!-- Your other sections… -->
+  <!-- Experience -->
+  <section id="experience">
+    <h2>Experience</h2>
+    <ul>
+      <li>
+        <strong>Junior Developer</strong>, Crown Jewels Consultants (CJC)<br>
+        June 2023 – Present
+        <ul>
+          <li>Report Generation Project: Built a CLI programme that takes a user-created markdown and a CSV of data and converts it into a Word document report, with an optional instant HTML view.</li>
+          <li>Order Book Generation and Display: Created a live market simulation for trades and implemented a sorting algorithm to populate an HTML order book display.</li>
+          <li>CJC Academy Networking: Completed sessions and exam covering routing, subnet masks, IP addresses and the OSI model.</li>
+          <li>Web Scraper: Built an endpoint application that scrapes websites for specific download links and downloads files (e.g. market-data reports), handling system permissions.</li>
+          <li>Equity Entity Tracker: Wrote a script using ISO and ESMA documentation to sort, filter and track EU equity-trading entities; built an online updating display with Retool.</li>
+          <li>Digital Contract Application: In a team, developed a full-stack app (JavaScript, SQL) for financial entities to store and exchange digital market-data contracts.</li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+
+  <!-- University Projects -->
+  <section id="projects">
+    <h2>University Projects</h2>
+
+    <h3>First Year</h3>
+    <ul>
+      <li>Drawing Tool (paired): Interactive whiteboard allowing users to draw and save images.</li>
+      <li>Front-End Web HTML: HTML mock portfolio showcasing an artist’s work.</li>
+    </ul>
+
+    <h3>Second Year</h3>
+    <ul>
+      <li>Football Tournament Simulation (individual): Java-based simulation which reads squad CSVs, runs matches by team-average skill plus chance.</li>
+      <li>Student Food Planner (group): Web app using an API to suggest recipes based on given ingredients, generate meal plans and grocery lists.</li>
+    </ul>
+
+    <h3>Third Year (in progress)</h3>
+    <ul>
+      <li>Full-Stack Web Application: Planning and developing a movie-watchlist API + frontend presentation layer.</li>
+      <li>Generative AI Model: Designed & evaluated CNNs for malaria detection in blood-sample images (best model: 96% test accuracy).</li>
+    </ul>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>
+        <strong>Languages:</strong>
+        <ul>
+          <li>Intermediate: Python, JavaScript, HTML, CSS, SQL</li>
+          <li>Basic: Java</li>
+        </ul>
+      </li>
+      <li>
+        <strong>Technologies:</strong>
+        <ul>
+          <li>Flask, Pandas, Matplotlib, Pandoc, DocXCompose, Markdown</li>
+          <li>TensorFlow, YAML, EJS, Retool, Node.js</li>
+        </ul>
+      </li>
+    </ul>
+  </section>
 
 </body>
 </html>
