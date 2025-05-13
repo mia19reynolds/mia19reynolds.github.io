@@ -2,135 +2,65 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <title>Mia Reynolds — Gothic Portfolio</title>
-  <style>
-    /* Reset & box-sizing */
-    *, *::before, *::after {
-      margin: 0; padding: 0; box-sizing: border-box;
-    }
-    body {
-      background: #000;
-      color: #eee;
-      font-family: 'Old English Text MT', Garamond, serif;
-      line-height: 1.5;
-      padding: 1rem;
-    }
-    a { color: #900; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-
-    header, section {
-      max-width: 700px;
-      margin: 2rem auto;
-      border-bottom: 1px solid #333;
-      padding-bottom: 1.5rem;
-    }
-
-    /* Hero */
-    .hero {
-      display: flex;
-      align-items: center;
-      gap: 1.5rem;
-    }
-    .hero img {
-      width: 120px;
-      height: 120px;
-      object-fit: cover;
-      border: 2px solid #333;
-      border-radius: 50%;
-    }
-    .hero h1 {
-      font-size: 2.5rem;
-      color: #ddd;
-    }
-    .hero p {
-      margin-top: 0.5rem;
-      max-width: 500px;
-    }
-    .social {
-      margin-top: 1rem;
-    }
-    .social a {
-      margin-right: 1rem;
-      font-weight: bold;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-    }
-
-    /* Lists */
-    ul { list-style: none; }
-    li::before { content: "• "; color: #900; }
-
-    /* Section titles */
-    h2 {
-      font-size: 1.75rem;
-      margin-bottom: 0.75rem;
-      color: #ddd;
-    }
-
-    footer {
-      text-align: center;
-      margin: 3rem auto 1rem;
-      font-size: 0.85rem;
-      color: #555;
-    }
-  </style>
+  <title>Mia Reynolds – Portfolio</title>
 </head>
 <body>
 
-  <header class="hero">
+  <!-- Hero / Intro -->
+  <header>
     <img src="profile.jpg" alt="Mia Reynolds">
-    <div>
-      <h1>Mia Reynolds</h1>
-      <p>A high-performing third-year computer science student with a developing interest in deep learning and its ethical implications in practice.</p>
-      <div class="social">
-        <a href="https://github.com/yourusername" target="_blank">GitHub</a>
-        <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
-        <a href="mailto:mia19reynolds@gmail.com">Email</a>
-      </div>
-    </div>
+    <h1>Mia Reynolds</h1>
+    <p>
+      A high-performing third-year Computer Science student with a developing interest in deep learning and its ethical implications in practice.
+    </p>
+    <nav>
+      <a href="https://github.com/yourusername" target="_blank">GitHub</a> |
+      <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a> |
+      <a href="mailto:mia19reynolds@gmail.com">Email</a>
+    </nav>
   </header>
 
+  <!-- Experience -->
   <section id="experience">
     <h2>Experience</h2>
     <ul>
       <li>
-        <strong>Junior Developer, Crown Jewels Consultants (CJC)</strong><br>
-        June 2023 – Present  
+        <strong>Junior Developer</strong>, Crown Jewels Consultants (CJC)<br>
+        June 2023 – Present
         <ul>
-          <li>Report Generation CLI: Markdown + CSV → Word doc with instant HTML preview.</li>
-          <li>Order Book Simulator: Live market simulation + sorting algorithm + HTML display.</li>
-          <li>CJC Academy Networking: Routing, subnet masks, IP addresses, OSI model.</li>
-          <li>Web Scraper: Endpoint app to download market-data reports.</li>
-          <li>Equity Entity Tracker: ISO/ESMA-based filter & online update via Retool.</li>
-          <li>Digital Contract App: JS / SQL front-end for financial data exchange.</li>
+          <li>Report Generation CLI: Markdown + CSV → Word doc with instant HTML preview</li>
+          <li>Order Book Simulator: Live market simulation + sorting algorithm + HTML display</li>
+          <li>CJC Academy Networking: Routing, subnet masks, IP addresses, OSI model</li>
+          <li>Web Scraper: Endpoint app to download market-data reports</li>
+          <li>Equity Entity Tracker: ISO/ESMA-based filter & online update via Retool</li>
+          <li>Digital Contract App: JS/SQL front-end for financial data exchange</li>
         </ul>
       </li>
     </ul>
   </section>
 
+  <!-- University Projects -->
   <section id="projects">
     <h2>University Projects</h2>
+
     <h3>First Year</h3>
     <ul>
-      <li>Drawing Tool: Interactive whiteboard to create & save images.</li>
-      <li>Portfolio Mock-up: HTML mock portfolio showcasing an artist’s work.</li>
+      <li>Drawing Tool: Interactive whiteboard to create & save images</li>
+      <li>Portfolio Mock-up: HTML mock portfolio showcasing an artist’s work</li>
     </ul>
+
     <h3>Second Year</h3>
     <ul>
-      <li>Football Tournament Simulation: Java-based CSV squad data & match engine.</li>
-      <li>Student Food Planner: Recipe API + grocery list generator web app.</li>
+      <li>Football Tournament Simulation: Java-based CSV squad data & match engine</li>
+      <li>Student Food Planner: Recipe API + grocery list generator web app</li>
     </ul>
+
     <h3>Third Year (in progress)</h3>
     <ul>
-      <li>Full-Stack Web App: Movie watchlist API + presentation layer.</li>
-      <li>Generative AI Model: CNN for malaria detection (96 % test accuracy).</li>
+      <li>Full-Stack Web App: Movie watchlist API + presentation layer</li>
+      <li>Generative AI Model: CNN for malaria detection (96% test accuracy)</li>
     </ul>
   </section>
-
-  <footer>
-    &copy; 2025 Mia Reynolds
-  </footer>
 
 </body>
 </html>
