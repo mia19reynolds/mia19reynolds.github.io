@@ -7,74 +7,43 @@
     body {
       font-family: 'Aptos', sans-serif;
     }
+
+    /* Float the image in the header */
+    header img {
+      float: right;
+      width: 200px;    /* fixed width */
+      height: auto;    /* preserve aspect ratio */
+      margin-left: 1em;
+      margin-bottom: 0.5em;
+    }
+
+    /* Clear the float after header content */
+    header::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
   </style>
 </head>
 <body>
 
   <!-- Intro -->
   <header>
-  <img
-    src="IMG_7143.jpg"
-    alt="Mia Reynolds"
-    width="200"                
-    height="200"
-    style="float: right; margin-left: 1em;"
-  >
-  <h1>Mia Reynolds</h1>
-  <p>
-    A high-performing third-year Computer Science student with a developing
-    interest in deep learning and its ethical implications in practice.
-  </p>
-  <nav>
-    <a href="https://github.com/yourusername" target="_blank">GitHub</a> |
-    <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a> |
-    <a href="mailto:mia19reynolds@gmail.com">Email</a>
-  </nav>
-  <div style="clear: both;"></div>
-</header>
+    <!-- Just the src and alt here; sizing & float are in CSS -->
+    <img src="IMG_7143.jpg" alt="Mia Reynolds">
 
+    <h1>Mia Reynolds</h1>
+    <p>
+      A high-performing third-year Computer Science student with a developing interest in deep learning and its ethical implications in practice.
+    </p>
+    <nav>
+      <a href="https://github.com/yourusername" target="_blank">GitHub</a> |
+      <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a> |
+      <a href="mailto:mia19reynolds@gmail.com">Email</a>
+    </nav>
+  </header>
 
-  <!-- Experience -->
-  <section id="experience">
-    <h2>Experience</h2>
-    <ul>
-      <li>
-        <strong>Junior Developer</strong>, Crown Jewels Consultants (CJC)<br>
-        June 2023 – Present
-        <ul>
-          <li>Report Generation CLI: Markdown + CSV → Word doc with instant HTML preview</li>
-          <li>Order Book Simulator: Live market simulation + sorting algorithm + HTML display</li>
-          <li>CJC Academy Networking: Routing, subnet masks, IP addresses, OSI model</li>
-          <li>Web Scraper: Endpoint app to download market-data reports</li>
-          <li>Equity Entity Tracker: ISO/ESMA-based filter & online update via Retool</li>
-          <li>Digital Contract App: JS/SQL front-end for financial data exchange</li>
-        </ul>
-      </li>
-    </ul>
-  </section>
-
-  <!-- University Projects -->
-  <section id="projects">
-    <h2>University Projects</h2>
-
-    <h3>First Year</h3>
-    <ul>
-      <li>Drawing Tool: Interactive whiteboard to create & save images</li>
-      <li>Portfolio Mock-up: HTML mock portfolio showcasing an artist’s work</li>
-    </ul>
-
-    <h3>Second Year</h3>
-    <ul>
-      <li>Football Tournament Simulation: Java-based CSV squad data & match engine</li>
-      <li>Student Food Planner: Recipe API + grocery list generator web app</li>
-    </ul>
-
-    <h3>Third Year (in progress)</h3>
-    <ul>
-      <li>Full-Stack Web App: Movie watchlist API + presentation layer</li>
-      <li>Generative AI Model: CNN for malaria detection (96% test accuracy)</li>
-    </ul>
-  </section>
+  <!-- Your other sections… -->
 
 </body>
 </html>
