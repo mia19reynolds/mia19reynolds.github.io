@@ -2,129 +2,135 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mia Reynolds – Portfolio</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Mia Reynolds — Gothic Portfolio</title>
   <style>
+    /* Reset & box-sizing */
+    *, *::before, *::after {
+      margin: 0; padding: 0; box-sizing: border-box;
+    }
     body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 2rem;
-      max-width: 900px;
-      margin: auto;
-      line-height: 1.6;
-      background-color: #fafafa;
+      background: #000;
+      color: #eee;
+      font-family: 'Old English Text MT', Garamond, serif;
+      line-height: 1.5;
+      padding: 1rem;
     }
-    header {
-      text-align: center;
-      margin-bottom: 2rem;
+    a { color: #900; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    header, section {
+      max-width: 700px;
+      margin: 2rem auto;
+      border-bottom: 1px solid #333;
+      padding-bottom: 1.5rem;
     }
-    h1 {
-      margin-bottom: 0.2rem;
+
+    /* Hero */
+    .hero {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
     }
-    nav {
-      text-align: center;
-      margin-bottom: 2rem;
+    .hero img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border: 2px solid #333;
+      border-radius: 50%;
     }
-    nav a {
-      margin: 0 10px;
-      text-decoration: none;
-      color: #333;
+    .hero h1 {
+      font-size: 2.5rem;
+      color: #ddd;
     }
-    section {
-      margin-bottom: 2rem;
+    .hero p {
+      margin-top: 0.5rem;
+      max-width: 500px;
     }
+    .social {
+      margin-top: 1rem;
+    }
+    .social a {
+      margin-right: 1rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    /* Lists */
+    ul { list-style: none; }
+    li::before { content: "• "; color: #900; }
+
+    /* Section titles */
     h2 {
-      border-bottom: 1px solid #ccc;
-      padding-bottom: 0.5rem;
+      font-size: 1.75rem;
+      margin-bottom: 0.75rem;
+      color: #ddd;
     }
-    ul {
-      padding-left: 20px;
-    }
-    .contact a {
-      display: block;
+
+    footer {
+      text-align: center;
+      margin: 3rem auto 1rem;
+      font-size: 0.85rem;
+      color: #555;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Mia Reynolds</h1>
-    <p>A high-performing third year Computer Science student with a strong interest in deep learning and its ethical implications.</p>
+
+  <header class="hero">
+    <img src="profile.jpg" alt="Mia Reynolds">
+    <div>
+      <h1>Mia Reynolds</h1>
+      <p>A high-performing third-year computer science student with a developing interest in deep learning and its ethical implications in practice.</p>
+      <div class="social">
+        <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+        <a href="mailto:mia19reynolds@gmail.com">Email</a>
+      </div>
+    </div>
   </header>
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#experience">Experience</a>
-    <a href="#skills">Skills</a>
-    <a href="#courses">Courses</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I'm currently completing my BSc in Computer Science at Goldsmiths, University of London, and expect to graduate in 2025 with a First. I’m especially interested in AI and how it intersects with ethical practices in real-world systems.</p>
+  <section id="experience">
+    <h2>Experience</h2>
+    <ul>
+      <li>
+        <strong>Junior Developer, Crown Jewels Consultants (CJC)</strong><br>
+        June 2023 – Present  
+        <ul>
+          <li>Report Generation CLI: Markdown + CSV → Word doc with instant HTML preview.</li>
+          <li>Order Book Simulator: Live market simulation + sorting algorithm + HTML display.</li>
+          <li>CJC Academy Networking: Routing, subnet masks, IP addresses, OSI model.</li>
+          <li>Web Scraper: Endpoint app to download market-data reports.</li>
+          <li>Equity Entity Tracker: ISO/ESMA-based filter & online update via Retool.</li>
+          <li>Digital Contract App: JS / SQL front-end for financial data exchange.</li>
+        </ul>
+      </li>
+    </ul>
   </section>
 
   <section id="projects">
     <h2>University Projects</h2>
     <h3>First Year</h3>
     <ul>
-      <li><strong>Drawing Tool</strong> – Built an interactive whiteboard app allowing users to create and save drawings.</li>
-      <li><strong>HTML Artist Portfolio</strong> – Designed a simple static portfolio to display an artist’s work.</li>
+      <li>Drawing Tool: Interactive whiteboard to create & save images.</li>
+      <li>Portfolio Mock-up: HTML mock portfolio showcasing an artist’s work.</li>
     </ul>
     <h3>Second Year</h3>
     <ul>
-      <li><strong>Football Tournament Simulator</strong> – A Java program simulating matches using team stats and chance.</li>
-      <li><strong>Student Food Planner</strong> – A web app offering meal plans or recipe ideas from available ingredients using APIs.</li>
+      <li>Football Tournament Simulation: Java-based CSV squad data & match engine.</li>
+      <li>Student Food Planner: Recipe API + grocery list generator web app.</li>
     </ul>
     <h3>Third Year (in progress)</h3>
     <ul>
-      <li><strong>Movie Watchlist App</strong> – Full stack web application using a movie API.</li>
-      <li><strong>Malaria Detection AI</strong> – CNN-based classifier for malaria in blood samples with 96% test accuracy.</li>
+      <li>Full-Stack Web App: Movie watchlist API + presentation layer.</li>
+      <li>Generative AI Model: CNN for malaria detection (96 % test accuracy).</li>
     </ul>
   </section>
 
-  <section id="experience">
-    <h2>Professional Experience</h2>
-    <p><strong>Junior Developer, Crown Jewels Consultants (CJC)</strong> – June 2023 to Present</p>
-    <ul>
-      <li>Created report generators and live market simulations in CLI and HTML.</li>
-      <li>Developed a web scraper for downloading targeted files and market data.</li>
-      <li>Built an equity tracker and frontend using the RETOOL framework.</li>
-      <li>Worked on a digital contracts app with JS/SQL.</li>
-    </ul>
-  </section>
+  <footer>
+    &copy; 2025 Mia Reynolds
+  </footer>
 
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>Languages: Python, JavaScript, HTML, CSS, SQL (Intermediate); Java (Basic)</li>
-      <li>Technologies: Flask, Pandas, Matplotlib, Pandoc, TensorFlow, YAML, Node.js, EJS, Retool</li>
-    </ul>
-  </section>
-
-  <section id="courses">
-    <h2>Additional Training & Courses</h2>
-    <ul>
-      <li>CloudFlare Python Intermediate Training</li>
-      <li>CJC Academy: Networking, Operations, DACs</li>
-      <li>Goldsmiths Gold Award: Professional Skills Development (in progress)</li>
-      <li>FISD Financial Information Associate (content covered)</li>
-      <li>Freelance Website Development: built and managed small business/event websites</li>
-    </ul>
-  </section>
-
-  <section id="contact" class="contact">
-    <h2>Contact</h2>
-    <a href="mailto:mia19reynolds@gmail.com">mia19reynolds@gmail.com</a>
-    <a href="https://github.com/yourusername">GitHub Profile</a>
-    <a href="tel:+447516950744">07516950744</a>
-    <!-- Add LinkedIn if desired -->
-  </section>
-
-  <section>
-    <h2>Resume</h2>
-    <p><a href="MRCV2025.pdf" download>Download CV (PDF)</a></p>
-  </section>
 </body>
 </html>
